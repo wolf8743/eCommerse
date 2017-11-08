@@ -1,0 +1,101 @@
+<!doctypehtml>
+<html>
+     <head>
+          <title>Maciel's Fabulous Shoes</title>
+          <style>
+          img{
+            width:200px; 
+          }
+          </style>
+          <script>
+             function calculate (amount){
+               var q1 = document.getElementById("q1");
+               var q2 = document.getElementById("q2");
+               var q3 = document.getElementById("q3");
+               var q4 = document.getElementById("q4");
+               var phone = document.getElementById("phone number");
+               var email = document.getElementById("email");
+               var apt = document.getElementById("apartment");
+               var zipcode = document.getElementById("zip code");
+               var FullName = document.getElementById("Full name");
+               var subtotal = document.getElementById("subotoal");
+
+               var taxrate =parseFloat(subtotal.value) * 0.0875;
+               subtotal = parseFloat(q1.value) * parseFloat(q2.value) * parseFloat(q3.value) * parseFloat(q4.value)
+
+               var reprice1 = 99.99;
+               var reprice2 = 70.99;
+               var reprice3 = 50.99;
+               var reprice4 = 60.99;
+
+               var shipping = parseFloat(9.99);
+
+               var totoal = subtotal + taxrate + shipping;
+
+               var build = "";
+               build += "---------------------------------\n";
+               build += "Total cost: $" + subtotal.value +  retax.value + "\n\n"
+               build += "Reciever: " + FullName.value + " at " + apt.value + "" + zipcode.value
+               build += "Phone number"
+               
+             }
+           </script>
+      </head>
+      <body>
+        <div>
+            <h2> Blue Buckeled Highheels </h2>
+            <img src = "shoe 1.jpg">
+
+            <span> $99.99
+            </span>
+            <p>
+              These beautiful blue 5 inch heels were handcrafted and imported from France. <br>
+              Not only are they gorgeous, but they are perfect for any formal gathering or simply<br>
+              just adding a pop of color to any oufit</br>
+            </p>
+            <input id = "quantity 1" type = "text" placeholder = "Enter Quantity">
+             <button on click> Add to chart
+            </button>
+        </div>
+        <div>
+            <h2> Black Lace Up Anckle Boots </h2>
+            <img src = "shoe 2.jpg">
+
+            <span> $70.99
+            </span>
+            <p>
+              A classic sheer black boot with an added gold heel,perfect for any seasonal outfit. <br>
+              Inported from Greece andand a total must have. </br>
+            </p>
+            <input id = "quantity 2" type = "text" placeholder = "Enter Quantity">
+            <button on click > Add to chart
+            </button>
+        </div>
+         <div>
+            <h2> Black Boots </h2>
+            <img src = "shoe 3.jpg">
+            <span> $50.99
+            </span>
+            <p>
+              These are 5 inch heels with red bottoms
+            </p>
+            <input id = "quantity 3" type = "text" placeholder = "Enter Quantity">
+            <button on click > Add to chart
+            </button>
+        </div>
+        <div>
+            <h2> Sneaker Wedges </h2>
+            <img src = "shoe 4.jpg">
+            <span> $60
+            </span>
+            <p>
+             These sneakers have a built in heel to exensuate the body.<br> 
+             They even zip up for easy foot entry
+            </p>
+            <input id = "quantity 4" type = "text" placeholder = "Enter Quantity">
+            <button on click > Add to chart
+            </button>
+        </div>
+      </body>
+     
+</html>
